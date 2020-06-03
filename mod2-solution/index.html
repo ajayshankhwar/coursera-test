@@ -1,189 +1,133 @@
-<doctype html>
+<!DOCTYPE html>
+<html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale= 1">
-<link rel="stylesheet" type="text/css" href="mod-2/style.css">
-<title> Our Menu </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
 <style>
-/******** base style********/
+
 * {
-box-sizing= border-box;
-}
-h1 {
-text-align: center;
-margin-bottom: 15px;
-font-size: 56px;
-}
-p {
-border: 1px solid black;
-margin: 15px;
-width: 90%;
-height: 150px;
-margin-right: auto; 
-margin-left: auto;
-font-family: "Times New Roman", Times, serif, Arial, Helvetica, sans-serif;
-background-color: grey;
+  box-sizing:border-box;
 }
 
 
-/*****simple responsive framework*****/
-.row {
-width: 100%;
+.left {
+  background-color: grey;
+  font-family: "Times New Roman", Times, serif, Arial, Helvetica;
+  margin-bottom: 15px;
+  border: 2px solid black;
+  
+  float:left;
+  width:30%; 
+  margin: 10px;
+  padding: auto;
 }
 
-/*****Large devices only*****/
+.main {
+  background-color: grey;
+  border: 2px solid black;
+  margin: 10px;
+  padding: auto;
+  float:left;
+  width:30%; 
+  font-family: "Times New Roman", Times, serif, Arial, Helvetica;
 
-@media (min-width= 1200px) {
-.col-lg-1, .col-lg-2, .col-lg-3 {
-
-float: left;
-border: 1px solid black;
-}
-.col-lg-1 {
-width: 8.33%;
-}
-.col-lg-2 {
-width: 16.66%;
-}
-.col-lg-3 {
-width: 25%;
-}
-.col-lg-4 {
-width: 33%;
-}
-.col-lg-5 {
-width: 41%;
-}
-.col-lg-6 {
-width: 50%;
-}
-.col-lg-7 {
-width: 58.33%;
-}
-.col-lg-8 {
-width: 66.66%;
-}
-.col-lg-9 {
-width: 74.99%;
-}
-.col-lg-10 {
-width: 83.33%;
-}
-.col-lg-11 {
-width: 91.66%;
-}
-.col-lg-12 {
-width: 100%;
-}
 }
 
-/*******medium scale devices********/
+.right {
+  background-color: grey;
+  border: 2px solid black;
+  margin: 10px;
+  padding:auto;
+  float:left;
+  width:30%; 
+  font-family: "Times New Roman", Times, serif, Arial, Helvetica;
 
-@media (min-width: 992px) and (max-width: 1199px) {
-.col-md-1, .col-md-2,.col-md-3 {
-float: left;
-border: 1px solid black;
-}
-.col-md-1 {
-width: 8.33%;
-}
-.col-md-2 {
-width: 16.66%;
-}
-.col-md-3 {
-width: 25%;
-}
-.col-md-4 {
-width: 33%;
-}
-.col-md-5 {
-width: 41%;
-}
-.col-md-6 {
-width: 50%;
-}
-.col-md-7 {
-width: 58.33%;
-}
-.col-md-8 {
-width: 66.66%;
-}
-.col-md-9 {
-width: 74.99%;
-}
-.col-md-10 {
-width: 83.33%;
-}
-.col-md-11 {
-width: 91.66%;
-}
-.col-md-12 {
-width: 100%;
-}
 }
 
-/******* for mobile devices********/
-@media(min-width:412px) && (max-width: 842px)
-.col-sd-1, .col-sd-2, .col-sd-3 {
-float: left;
-border: 1px solid black;
-}
-.col-sd-1 {
-width: 8.33%;
-}
-.col-sd-2 {
-width: 16.66%
-}
-.col-sd-3 {
-width: 25%
-}
-.col-sd-4 {
-width: 33%
-}
-.col-sd-5 {
-width: 41%
-}
-.col-sd-6 {
-width: 50%
-}
-.col-sd-7 {
-width: 58.33%
-}
-.col-sd-8 {
-width: 66.66%
-}
-.col-sd-9 {
-width: 74.99%
-}
-.col-sd-10{
-width: 83.66%
-}
-.col-sd-11{
-width: 91.33%
-}
-.col-sd-12 {
-width: 100%
-}
+.chicken {
+  font-size: 125%;
+  float: right;
+  background-color: green ;
+  padding: 5px 2px; 
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  font-family: "Times New Roman", Times, serif, Arial, Helvetica;
+
 }
 
+.beef {
+  font-size: 125%;
+  float: right;
+  background-color: blue;
+  padding: 5px 2px;
+   border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  font-family: "Times New Roman", Times, serif, Arial, Helvetica;
+
+}
+
+.sushi {
+  font-size: 125%;
+  float: right;
+  background-color: yellow;
+  padding: 5px 2px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  font-family: "Times New Roman", Times, serif, Arial, Helvetica;
+
+}
+
+/* Use a media query to add a break point at 992px: */
+@media (min-width: 768px) and (max-width: 991px) {
+
+.left {
+  width: 46%;
+  height: auto;
+}
+.main {
+  width: 46%;
+  height: auto;
+}
+.right {
+  width: 95%;
+}
+}
+/* Use a media query to add a break point at 600px: */
+@media screen and (max-width:767px) {
+  .left, .main, .right {
+    width:98%; 
+  }
+}
 </style>
 </head>
 <body>
-<h1> Our Menu </h1>
-<div class="row">
-  <div class="col-lg-3 col-md-3 col-sd-3">
-  <p>  
-       Chicken
-  </p>
-   <div class="col-lg-3 col-md-3 col-sd-3">
-  <p> 
-       Beef
-  
-  </p>
-   <div class="col-lg-3 col-md-2 col-sd-3">
-  <p> 
-       Sushi
-   </p>
 
+<h2> Our Menu</h2>
+
+<div class= "parent">
+<div class="left">
+  <div>
+   <span class="chicken">Chicken</span>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, molestias, cumque! Odio illum quisquam sint porro exercitationem natus in consectetur blanditiis sunt, dolor aliquam magnam necessitatibus nobis mollitia quo obcaecati!</p>
+</div>
+
+<div class="main">
+  <div>
+    <span class="beef">Beef</span>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, molestias, cumque! Odio illum quisquam sint porro exercitationem natus in consectetur blanditiis sunt, dolor aliquam magnam necessitatibus nobis mollitia quo obcaecati!</p>
+</div>
+
+<div class="right">
+  <div>
+    <span class="sushi">Sushi</span>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, molestias, cumque! Odio illum quisquam sint porro exercitationem natus in consectetur blanditiis sunt, dolor aliquam magnam necessitatibus nobis mollitia quo obcaecati!</p>
+</div>
+</div>
+
+</body>
+</html>
 
 
