@@ -1,0 +1,5 @@
+var x = "hello woeld"
+undefined
+console.log(x)
+VM113:1 hello woeld
+undefined
